@@ -91,7 +91,7 @@
         <div class="modal-content border-0">
           <div class="modal-header text-white">
             <h5 class="modal-title" id="exampleModalLabel">新增產品</h5>
-            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+            <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close" @click="clear">
               <span aria-hidden="true">&times;</span>
             </button>
           </div>
@@ -242,6 +242,9 @@
             }
           });
         },
+        clear(){
+          this.tempData = {};
+        }
       },
       created() {
         
